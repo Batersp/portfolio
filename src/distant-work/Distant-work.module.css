@@ -5,10 +5,11 @@
 
 .container {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: nowrap;
 }
 
 .title {
-    height: 150px;
+
+    background-color: darkgray;
 }

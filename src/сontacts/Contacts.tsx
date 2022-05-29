@@ -7,11 +7,11 @@ export const Contacts = () => {
         <div className={style.contactsBlock}>
             <div className={`${stylesContainer.container} ${style.contactsContainer}`}>
                 <h2 className={style.title}>Контакты</h2>
-                <div className={style.inputs}>
+                <form className={style.inputs}>
                     <input type="text"/>
                     <input type="text"/>
                     <textarea></textarea>
-                </div>
+                </form>
                 <button>Отправить</button>
             </div>
         </div>
