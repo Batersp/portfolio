@@ -1,0 +1,19 @@
+.project {
+    background-color: darkgray;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    height: 250px;
+    text-align: center;
+    background-color: gold;
+}
+
+.btn {
+    margin-top: 125px;
+
+}
+
+
