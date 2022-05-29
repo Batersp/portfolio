@@ -1,0 +1,14 @@
+.distantWorkBlock {
+    background-color: rgba(238,205,208,0.89);
+    height: 200px;
+}
+
+.container {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.title {
+    height: 150px;
+}
