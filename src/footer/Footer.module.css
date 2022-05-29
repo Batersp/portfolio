@@ -1,6 +1,7 @@
 .footerBlock {
     background-color: rgba(120, 238, 142, 0.89);
     height: 200px;
+    padding: 50px 0;
 }
 
 .footerContainer {
@@ -13,13 +14,13 @@
 
 .body {
     border: 1px solid;
-    height: 50px;
-    width: 600px;
+    height: 40px;
+    width: 280px;
     display: flex;
     justify-content: space-between;
 }
 
 .el {
     background-color: darkgray;
-    width: 80px;
+    width: 40px;
 }

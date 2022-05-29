@@ -3,17 +3,28 @@
     width: 400px;
     display: flex;
     flex-direction: column;
+
 }
 
-.img {
-    height: 250px;
-    text-align: center;
+.imgContainer {
+    width: 100%;
+    height: 200px;
     background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn {
-    margin-top: 125px;
+    background-color: darkgray;
+}
 
+.name {
+    background-color: lightpink;
+}
+
+.description {
+    background-color: rgba(124,100,238,0.89);
 }
 
 
