@@ -1,6 +1,6 @@
 .contactsBlock {
     background-color: lightpink;
-    height: 300px;
+  /*  height: 300px;*/
 }
 
 .contactsContainer {
@@ -13,7 +13,7 @@
 }
 
 .inputs {
-    width: 280px;
+    width: 50%;
     border: 1px solid;
     height: 120px;
     display: flex;
@@ -23,4 +23,11 @@
 }
 textarea {
    height: 70px;
+}
+
+
+@media screen and (max-width: 450px){
+    .inputs {
+        width: 90%;
+    }
 }
