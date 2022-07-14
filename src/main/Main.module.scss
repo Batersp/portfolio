@@ -1,0 +1,21 @@
+@import '/src/comman/styles/sass/variables';
+
+.mainBlock {
+    min-height: 100vh;
+    background-color: $bgColor;
+    color: $textColor;
+    .text {
+        width: 310px;
+        background-color: $bgSecondColor;
+    }
+    .photo {
+        width: 310px;
+        height: 400px;
+        background-color: darkgray;
+    }
+}
+
+
+
+
+

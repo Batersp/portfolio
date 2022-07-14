@@ -1,0 +1,13 @@
+@import '/src/comman/styles/sass/variables';
+
+.distantWorkBlock {
+    background-color:$bgSecondColor;
+    .container {
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+}
+
+
+

@@ -1,20 +1,21 @@
 import React from 'react';
-import style from './Footer.module.css'
+import style from './Footer.module.scss'
 import stylesContainer from "../comman/styles/Container.module.css";
+import {Title} from "../comman/components/title/Title";
 
 
 export const Footer = () => {
     return (
         <div className={style.footerBlock}>
             <div className={`${stylesContainer.container} ${style.footerContainer}`}>
-                <h2 className={style.title}>Ишмуков Павел</h2>
+                <Title title='Ишмуков Павел'/>
                 <div className={style.body}>
                     <div className={style.el}></div>
                     <div className={style.el}></div>
                     <div className={style.el}></div>
                     <div className={style.el}></div>
                 </div>
-                <span>Все права защищены</span>
+                <span className={style.description}>Все права защищены</span>
             </div>
         </div>
     );

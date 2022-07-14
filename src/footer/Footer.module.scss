@@ -1,0 +1,30 @@
+@import '/src/comman/styles/sass/variables';
+
+.footerBlock {
+    background-color:$bgSecondColor;
+    padding: 50px 0;
+    .footerContainer {
+        flex-direction: column;
+        .body {
+            border: 1px solid;
+            height: 40px;
+            width: 280px;
+            display: flex;
+            justify-content: space-between;
+            .el {
+                background-color: $bgColor;
+                width: 40px;
+            }
+        }
+        .description {
+            color: $secondTextColor;
+        }
+    }
+}
+
+
+
+
+
+
+
