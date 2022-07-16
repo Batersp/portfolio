@@ -8,14 +8,14 @@ export const Footer = () => {
     return (
         <div className={style.footerBlock}>
             <div className={`${stylesContainer.container} ${style.footerContainer}`}>
-                <Title title='Ишмуков Павел'/>
+                <Title title='Pavel Ishmukov'/>
                 <div className={style.body}>
                     <div className={style.el}></div>
                     <div className={style.el}></div>
                     <div className={style.el}></div>
                     <div className={style.el}></div>
                 </div>
-                <span className={style.description}>Все права защищены</span>
+                <span className={style.description}>All rights reserved</span>
             </div>
         </div>
     );
