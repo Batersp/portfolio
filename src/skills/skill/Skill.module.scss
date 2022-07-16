@@ -12,7 +12,8 @@
     .icon {
         height: 60px;
         width: 60px;
-        background-color: gold;
+        background-size: cover;
+        background-position: center;
     }
     .title {
         color: $textColor;

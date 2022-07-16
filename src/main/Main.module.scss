@@ -4,15 +4,24 @@
     min-height: 100vh;
     background-color: $bgColor;
     color: $textColor;
-    .text {
-        width: 310px;
-        background-color: $bgSecondColor;
+    .mainContainer {
+        display: flex;
+        @media screen and (max-width: 775px) {
+            justify-content: center;
+        }
+        .text {
+            font-family: 'Mulish', sans-serif;
+            width: 310px;
+            background-color: $bgSecondColor;
+
+        }
+        .photo {
+            width: 310px;
+            height: 400px;
+            background-color: darkgray;
+        }
     }
-    .photo {
-        width: 310px;
-        height: 400px;
-        background-color: darkgray;
-    }
+
 }
 
 

@@ -7,13 +7,13 @@ export const Contacts = () => {
     return (
         <div className={style.contactsBlock}>
             <div className={`${stylesContainer.container} ${style.contactsContainer}`}>
-                <Title title='Контакты'/>
+                <Title title='contacts'/>
                 <form className={style.inputs}>
                     <input type="text"/>
                     <input type="text"/>
                     <textarea/>
                 </form>
-                <button type={'submit'}>Отправить</button>
+                <button type={'submit'}>Send</button>
             </div>
         </div>
     );
