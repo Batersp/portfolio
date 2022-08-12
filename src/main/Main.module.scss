@@ -1,26 +1,41 @@
 @import '/src/comman/styles/sass/variables';
 
 .mainBlock {
-    min-height: 100vh;
-    background-color: $bgColor;
-    color: $textColor;
-    .mainContainer {
-        display: flex;
-        @media screen and (max-width: 775px) {
-            justify-content: center;
-        }
-        .text {
-            font-family: 'Mulish', sans-serif;
-            width: 310px;
-            background-color: $bgSecondColor;
+  padding-top: 100px;
+  min-height: 100vh;
+  background-color: $bgColor;
+  color: $textColor;
+
+  .mainContainer {
+    display: flex;
+    @media screen and (max-width: 775px) {
+      justify-content: center;
+    }
+
+    .text {
+      font-family: 'Mulish', sans-serif;
+      width: 310px;
+      background-color: $bgSecondColor;
+      span {
+        &:nth-child(2){
 
         }
-        .photo {
-            width: 310px;
-            height: 400px;
-            background-color: darkgray;
-        }
+      }
     }
+
+    .photoContainer {
+      width: 310px;
+      height: 400px;
+      background-color: darkgray;
+      margin-top: 20px;
+
+      .photo {
+        background-size: cover;
+          width: 100%;
+          height: 100%;
+      }
+    }
+  }
 
 }
 

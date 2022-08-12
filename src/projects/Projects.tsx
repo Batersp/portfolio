@@ -5,7 +5,8 @@ import {Project} from "./project/Project";
 import {Title} from "../comman/components/title/Title";
 import todoImage from '../assets/image/todolist.jpg'
 import socialNetworkImage from '../assets/image/social-network.jpg'
-
+// @ts-ignore
+import Fade from 'react-reveal/Fade';
 
 export const Projects = () => {
 
@@ -18,13 +19,15 @@ export const Projects = () => {
     }
 
     return (
-        <div className={style.projectsBlock}>
+        <div id='Projects' className={style.projectsBlock}>
             <div className={`${stylesContainer.container} ${style.projectsContainer}`}>
-               <Title title={"My projects"}/>
-                <div className={style.projects}>
-                    <Project style={todoList} name={'Todolist'} description={'Its my first project'}/>
-                    <Project style={social} name={'Social-Network'} description={'www www wwwsww wwww'}/>
-                </div>
+                <Fade top>
+                    <Title title={"My projects"}/>
+                    <div className={style.projects}>
+                        <Project style={todoList} name={'Todolist'} description={'Its my first project'}/>
+                        <Project style={social} name={'Social-Network'} description={'www www wwwsww wwww'}/>
+                    </div>
+                </Fade>
             </div>
         </div>
     );

@@ -6,6 +6,8 @@ import {Title} from "../comman/components/title/Title";
 import jsIcon from "../assets/image/java-script.png";
 import reactIcon from "../assets/image/atom.png";
 import htmlIcon from "../assets/image/html.png";
+// @ts-ignore
+import Fade from 'react-reveal/Fade';
 
 
 export const Skills = () => {
@@ -26,14 +28,16 @@ export const Skills = () => {
 
 
     return (
-        <div className={style.skillsBlock}>
+        <div id='Skills' className={style.skillsBlock}>
             <div className={`${stylesContainer.container} ${style.skillsContainer}`}>
+                <Fade top>
                 <Title title={'My skills'}/>
                 <div className={style.skills}>
                     <Skill style={javaScript} title={'JS'} description={'javascript is the best programming language in the world, if i were president, js would be the state language'}/>
                     <Skill style={html} title={'HTML'} description={'gfgfgfgfgf'}/>
                     <Skill style={react} title={'REACT'} description={'wWWWWWWWWWWW'}/>
                 </div>
+                    </Fade>
             </div>
         </div>
     );
