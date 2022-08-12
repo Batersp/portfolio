@@ -6,6 +6,9 @@
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: nowrap;
+        .btn {
+            background-color: rgba(238,198,7,0.89);
+        }
     }
 }
 
