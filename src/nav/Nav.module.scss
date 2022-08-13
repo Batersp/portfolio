@@ -4,9 +4,19 @@
     width: 300px;
     display: flex;
     justify-content: space-between;
+    margin-right: 30px;
     a {
+        cursor: pointer;
         color: $textColor;
         text-decoration: none;
         font-family: 'Mulish', sans-serif;
+        &:hover {
+           color: rgba(238, 198, 7, 0.89);
+        }
     }
+    .active {
+        color: rgba(238, 198, 7, 0.89);
+    }
+
+
 }

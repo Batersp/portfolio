@@ -8,32 +8,65 @@
 
   .mainContainer {
     display: flex;
-    @media screen and (max-width: 775px) {
+    @media screen and (max-width: 1150px) {
       justify-content: center;
+
     }
 
     .text {
       font-family: 'Mulish', sans-serif;
-      width: 310px;
-      background-color: $bgSecondColor;
-      span {
-        &:nth-child(2){
+      width: 510px;
 
+      @media screen and (max-width: 611px) {
+        text-align: center;
+      }
+      .hi {
+        font-size: 25px;
+        @media screen and (max-width: 611px) {
+          font-size: 15px;
+        }
+      }
+      .name {
+        font-size: 50px;
+        @media screen and (max-width: 611px) {
+          font-size: 30px;
         }
       }
     }
 
     .photoContainer {
-      width: 310px;
-      height: 400px;
+      width: 410px;
+      height: 500px;
       background-color: darkgray;
-      margin-top: 20px;
+      margin-top: 40px;
+      @media screen and (max-width: 611px) {
+        width: 310px;
+        height: 400px;
+      }
+      @media screen and (max-width: 450px) {
+        width: 210px;
+        height: 300px;
+      }
+      @media screen and (max-width: 1150px) {
+       margin-bottom: 20px;
+
+      }
 
       .photo {
         background-size: cover;
           width: 100%;
           height: 100%;
       }
+    }
+    .photoContainer::before {
+      content: '';
+      position: absolute;
+      height: 110%;
+      width: 105%;
+      border: 5px solid rgba(238, 198, 7, 0.89);
+      left: 8%;
+      top: -6%;
+      z-index: -1;
     }
   }
 

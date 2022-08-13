@@ -26,11 +26,15 @@
             opacity: 0.4;
         }
         .btn {
+            cursor: pointer;
             background-color: $bgSecondColor;
             color: $textColor;
             font-family: 'Mulish', sans-serif;
             padding: 10px 20px;
             z-index: 1;
+            &:hover {
+               color: rgba(238, 198, 7, 0.89);
+            }
         }
     }
     .info {

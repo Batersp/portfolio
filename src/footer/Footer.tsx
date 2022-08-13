@@ -3,9 +3,12 @@ import style from './Footer.module.scss'
 import stylesContainer from "../comman/styles/Container.module.css";
 import {Title} from "../comman/components/title/Title";
 import linkedinIcon from '../assets/image/iconLinkedin.svg'
-import ggg from '../assets/image/icons8-github.svg'
+import githubIcon from '../assets/image/icons8-github.svg'
 import telegramIcon from '../assets/image/iconTelegramm.svg'
 import codewarsIcon from '../assets/image/codewars-red.svg'
+// @ts-ignore
+import Fade from 'react-reveal/Fade';
+
 
 export const Footer = () => {
 
@@ -14,7 +17,7 @@ export const Footer = () => {
     }
 
     const github = {
-        backgroundImage: `url(${ggg})`,
+        backgroundImage: `url(${githubIcon})`,
         backgroundSize: 'cover'
     }
 
@@ -29,14 +32,16 @@ export const Footer = () => {
     return (
         <div className={style.footerBlock}>
             <div className={`${stylesContainer.container} ${style.footerContainer}`}>
-                <Title title='Pavel Ishmukov'/>
-                <div className={style.body}>
-                    <div style={linkedin} className={style.el}></div>
-                    <div style={github} className={style.el}></div>
-                    <div style={telegram} className={style.el}></div>
-                    <div style={codewars} className={style.el}></div>
-                </div>
-                <span className={style.description}>All rights reserved</span>
+                <Fade top>
+                    <Title title='Pavel Ishmukov'/>
+                    <div className={style.body}>
+                        <a href='' style={linkedin} className={style.el}></a>
+                        <a href='' style={github} className={style.el}></a>
+                        <a href='' style={telegram} className={style.el}></a>
+                        <a href='' style={codewars} className={style.el}></a>
+                    </div>
+                    <span className={style.description}>All rights reserved</span>
+                </Fade>
             </div>
         </div>
     );
