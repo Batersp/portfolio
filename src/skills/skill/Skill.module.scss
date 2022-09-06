@@ -2,7 +2,6 @@
 
 .skill {
     width: 250px;
-    background-color: $bgColor;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,9 +19,7 @@
     .title {
         color: $textColor;
     }
-    .description {
-        color: $secondTextColor;
-    }
+
 }
 
 
